@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suggestions</title>
+  </head>
+  <body>
+    <header>
+      <h1>Grow Foods: The Farming Game</h1>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="suggestions.html">Suggestion</a>
+      </nav>
+      <br />
+    </header>
+
+    <main>
+      <h2>Suggestions for the Game:</h2>
+      <form name="game-suggestions" id="suggestion" method="get">
+        <!--
+          Name input so proper credit can be given to the person 
+          who came up with the idea. Optional
+        -->
+        <label for="name">Name: </label>
+        <br />
+        <input type="text" id="name" name="name" />
+        <br />
+        <br />
+
+        <!--
+          The topic of the users suggestion so it can be narrowed down. 
+          Topics include Graphics ideas, Gameplay ideas, and ideas for 
+          new items. Required field.
+        -->
+        <label for="suggestion-type">
+          What is the topic of your suggestion (Required):
+        </label>
+        <br />
+
+        <!--
+          Selection for users who wamt to upload a suggestion on the
+          game's graphics.
+        -->
+        <input
+          type="radio"
+          id="gameplay"
+          name="suggestion-type"
+          value="Gameplay"
+          required />
+        <label for="gameplay">Gameplay</label>
+        <br />
+
+        <!--
+          Selection for users who wamt to upload a suggestion on the
+          gameplay for the game.
+        -->
+        <input
+          type="radio"
+          id="graphics"
+          name="suggestion-type"
+          value="Graphics" />
+        <label for="graphics">Graphics</label>
+        <br />
+
+        <!--
+          Selection for users who want to upload a suggestion for a
+          new game item. Includes crops, tools and other items.
+        -->
+        <input
+          type="radio"
+          id="new-item"
+          name="suggestion-type"
+          value="NewItem" />
+        <label for="new-item">New Item</label>
+        <br />
+        <br />
+
+        <!--
+          The users suggestion for the game entered in a text field. 
+          This is where the idea is specified
+        -->
+        <label for="suggestion-text">Please Enter Your Suggestion:</label>
+        <br />
+        <textarea
+          id="suggestion-text"
+          name="suggestion-text"
+          rows="10"
+          cols="50">
+        </textarea>
+        <br />
+        <br />
+
+        <!--
+          If the user has a file they would like to upload that is relevent
+          to their suggestion. Like a diagram for an item.
+        -->
+        <label for="suggestion-file">Upload a Relavent File:</label>
+        <br />
+        <input type="file" id="suggestion-file" name="suggestion-file" />
+        <br />
+        <br />
+
+        <input type="submit" />
+        <input type="reset" />
+      </form>
+    </main>
+
+    <br />
+
+    <footer>
+      <p>&#169; Gavin Oliver</p>
+      <p>If you have any questions feel free to contact me at:</p>
+      <a href="mailto:gavin_oliver@outlook.com"> gavin_oliver@outlook.com </a>
+    </footer>
+  </body>
+</html>
